@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: collinsmunufie/three-tier-frontend:latest  # Frontend image will go to your-dockerhub-username/frontend repo
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: collinsmunufie/three-tier-backend:latest  # Backend image will go to your-dockerhub-username/backend repo
+
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: collinsmunufie/three-tier-database:latest  # Database image will go to your-dockerhub-username/database repo

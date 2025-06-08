@@ -1,0 +1,23 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Git-related files
+.git/
+
+# Ignore IDE settings (if any)
+.vscode/
+.idea/
+
+# Ignore Dockerfile itself (if you don't want to include it)
+Dockerfile
